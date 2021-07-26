@@ -26,6 +26,8 @@ nav {
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 10px;
+  float: left;
+  width: 200px;
 }
 
 nav a {
@@ -39,35 +41,97 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   border-top: 2px solid #221811;
-  font-size: small (0.6em);
+  font-size: small; /*(0.6em); */
 }
 
 h4 {
   background-color: #d2b48c;
   font-size: 1.2em;
   padding-left: 0.5em;
-  padding-bottom: 0.25em;
+  padding-bottom: 0em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #221811;
+  clear: left;
 }
-main {
-  padding-left: 2em;
+#floatleft {
+  float: left;
   padding-right: 2em;
+  padding-left: 2em;
+}
+
+main {
+  padding-left: 0em;
+  padding-right: 0em;
   padding-bottom: 2em;
+  margin-left: 200px;
+  padding-top: 0em;
+  background-color: #fef6c2;
   /* display: block; */
 }
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+nav a:link {
+  color: #fef6c2;
+}
+nav a:visited {
+  color: #d2b48c;
+}
+nav a:hover {
+  color: #cc9933;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
 #details {
   padding-left: 20%;
   padding-right: 20%;
+  overflow: auto;
 }
 img {
   padding-right: 10px;
   padding-left: 10px;
 }
+header,
+nav,
+main,
+footer {
+  display: block;
+}
 #wrapper {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fef6c2;
+  background-color: #231814;
   min-width: 900px;
   max-width: 1280px;
   box-shadow: 5px 5px 5px #828282;
+}
+* {
+  box-sizing: border-box;
+}
+#heroroad {
+  background-image: url("road.jpg");
+  background-size: 100% 100%;
+  height: 250px;
+}
+#heromugs {
+  background-image: url("mugs.jpg");
+  background-size: 100% 100%;
+  height: 250px;
+}
+#heroguitar {
+  background-image: url("heroguitar.jpg");
+  background-size: 100% 100%;
+  height: 250px;
 }
