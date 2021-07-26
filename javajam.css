@@ -2,21 +2,22 @@ body {
   background-color: #fcebb6;
   color: #221811;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: "background.gif";
+  background-image: url("background.gif");
 }
 
 header {
   background-color: #d2b48c;
   height: 150px;
+  background-image: url("javajamlogo.jpg");
   background-repeat: no-repeat;
   /*background-size: 100% 100%;*/
 }
 
 h1 {
   background-color: #d2b48c;
-  text-align: center;
+  text-align: left;
   padding-top: 45px;
-  padding-left: 220px;
+  margin-left: 220px;
   font-size: 3em;
 }
 
@@ -33,12 +34,14 @@ nav a {
 
 footer {
   background-color: #d2b48c;
-  font-size: small;
+  /* font-size: small; */
   font-style: italic;
   text-align: center;
   padding-bottom: 10px;
   border-top: 2px solid #221811;
+  font-size: small (0.6em);
 }
+
 h4 {
   background-color: #d2b48c;
   font-size: 1.2em;
@@ -49,6 +52,7 @@ main {
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 2em;
+  /* display: block; */
 }
 #details {
   padding-left: 20%;
